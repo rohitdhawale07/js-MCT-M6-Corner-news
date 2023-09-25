@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>News Corner</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="navbarBox container">
+          <div class="navLeft">
+            <a class="navbar-brand">
+              <span class="span1">News</span>
+              <span class="span2">Corner</span>
+            </a>
+          </div>
+
+          <div>
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link">News</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link">Blog</a>
+              </li>
+
+              <img
+                id="profile-picture"
+                src="https://news-corner.netlify.app/images/profile.png"
+                alt=""
+              />
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="container">
+        <hr />
+      </div>
+    </header>
+
+    <main>
+      <section class="container">
+        <div id="categories"></div>
+        <div id="spinner" class="spinner-border" role="status">
+          <span class="visually-hidden">Loading...</span>
+        </div>
+      </section>
+
+      <div>
+        <p
+          id="error-message"
+          class="container text-danger"
+          style="display: none"
+        >
+          Something went wrong, please try again later
+        </p>
+      </div>
+
+      <section class="container">
+        <div id="category-item-count"></div>
+        <div id="news-details-container">
+          <div id="news-details"></div>
+        </div>
+      </section>
+    </main>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
